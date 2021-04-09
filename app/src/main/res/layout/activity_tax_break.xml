@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:http="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:aandroid="http://schemas.android.com/tools">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/linearLayouts"
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        http:layout_constraintBottom_toBottomOf="parent"
+        http:layout_constraintEnd_toEndOf="parent"
+        http:layout_constraintStart_toStartOf="parent"
+        http:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:orientation="horizontal" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <TextView android:textSize="19sp" android:gravity="center" android:layout_width="100dp" android:layout_height="40dp" android:text="Amount"  />
+            <TextView android:textSize="19sp" android:gravity="center" android:layout_width="100dp" android:layout_height="40dp" android:text="Tax" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linearLayout3" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17sp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 - 5,000"  />
+            <TextView android:textSize="17sp" android:gravity="center_horizontal" android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linearLayout2" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17sp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5000- 12500"  />
+            <TextView android:textSize="17sp" android:gravity="center" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"  />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linearLayout1" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17sp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12500 - 100000"  />
+            <TextView android:textSize="17sp" android:gravity="center" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"  />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linearLayout0" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17sp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12500 - 100000"  />
+            <TextView android:textSize="17sp" android:gravity="center" android:id="@+id/textView0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <TextView android:textSize="19sp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Total"  />
+            <TextView android:textSize="22sp" android:gravity="center" android:id="@+id/tvTotal" android:layout_width="0dp" android:layout_height="wrap_content"  />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
